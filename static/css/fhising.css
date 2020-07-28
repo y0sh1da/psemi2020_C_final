@@ -1,0 +1,51 @@
+body{
+  background:#f8f8f8;
+  margin: 0;
+}
+
+div.wrapper {
+  font-family: serif;
+}
+
+header {
+  margin: 10px 20px;
+  padding-top: 5px;
+  background: #4DD0E1;
+}
+
+div.container {
+  margin: 10px 20px;
+  display: flex;
+  background: white;
+}
+
+div.main {
+  width: 70%;
+  margin: 10px;
+}
+
+div.image {
+  float: left;
+  width: 30%
+}
+
+div.explain {
+  float: right;
+  width: 70%;
+}
+
+div.button{
+  clear: both;
+  margin: 10px;
+}
+
+div.side {
+  width: 30%;
+  margin: 10px;
+}
+
+footer {
+clear:both;
+width:100%;
+background: #4DD0E1;
+}

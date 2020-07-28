@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2> テスト </h2>
+<form method="POST" action="/login">
+    <p>IDを入力してください</p>
+    <input type="text" name="message">
+    <p>パスワードを入力してください</p>
+    <input type="text" name="password">
+    <input type="submit" value="Send">
+</form>
+{% endblock %}

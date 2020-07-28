@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input_card_page</title>
+
+    <!-- materialize CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize CDN -->
+
+    <style>
+		body {
+		 background-image: url("../static/image/iphone.jpg");
+		 background-size: cover;
+		}
+	</style>
+
+</head>
+<body bgcolor=#f9f9f9>
+
+    <nav class="indigo">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center"></a>
+            <ul class="hide-on-med-and-down">
+                <li><a href="input_page.html">戻る</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col s12 m8 l6 offset-m2 offset-l3">
+            <div class="card">
+                <div class="card-content">
+
+                    <h5 class="center">
+                        お客様の情報を入力してください<br />
+                    </h5>
+                    <p>
+                        <br />
+                    </p>
+
+                    <p style="margin-top: 20px;">
+                        <label>カード番号<input type="tel" name="card" size="20"
+                                           maxlength="20"></label>
+                    </p>
+                    <p>
+                        <label>有効期限<input type="text" name="expiration" size="10"
+                                          maxlength="10"></label>
+                    </p>
+                    <p>
+                        <label>cvv番号(カードの裏面の3桁の番号)<input type="tel" name="cvv"
+                                                         size="6" maxlength="3"></label>
+                    </p>
+
+                    <div align="center">
+                    <a href="" onclick="document.form1.submit(); return false;" class="waves-effect waves-light btn light-green">
+                        決済の手続き
+                    </a>
+                    <form name="form1" method="post" action="/credit_information">
+                        <input type="hidden" name="a" value="1"/>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>input_page</title>
+
+    <!-- materialize CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize CDN -->
+    <style>
+		body {
+		 background-image: url("../static/image/iphone.jpg");
+		 background-size: cover;
+		}
+	</style>
+
+</head>
+<body bgcolor=#f9f9f9>
+<!--<form method="POST" action="/input_card_page">-->
+<nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">iPhoneXを100円で入手できるチャンス</a>
+    </div>
+</nav>
+<p class="center"><span style="color: #f9f9f9">「iphoneXが当たる」この機会に<br/>
+        CrackDownOn.comから4日間のトライアルで無期限のオンラインエンターテイメントを</span></p>
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col s12 m8 l6 offset-m2 offset-l3">
+        <div class="card">
+            <div class="card-content">
+
+                <h5 class="center">
+                    以下の項目を入力してください<br/>
+                </h5>
+
+                <p>
+                    <br/>
+                </p>
+
+                <p style="margin-top: 20px;">
+                    <label>名字<input type="text" name="surname" size="20"
+                                    maxlength="20" required></label>
+                </p>
+                <p>
+                    <label>名前<input type="text" name="name" size="20"
+                                    maxlength="20" required></label>
+                </p>
+                <p>
+                    <label>郵便番号(ハイフンなし)<input type="tel" name="postal"
+                                              size="10" maxlength="7" required></label>
+                </p>
+                <p>
+                    <label>都道府県<input type="text" name="prefectures" size="20"
+                                      maxlength="20" required></label>
+                </p>
+                <p>
+                    <label>市区町村番地<input type="text" name="municipality" size="20"
+                                        maxlength="20" required></label>
+                </p>
+                <p>
+                    <label>番地以降<input type="text" name="address" size="20"
+                                      maxlength="20"></label>
+                </p>
+                <p>
+                    <label>メールアドレス<input type="email" name="mail" size="20"
+                                         maxlength="20" required></label>
+                </p>
+                <p>
+                    <label>電話番号(ハイフンなし)<input type="tel" name="tel" size="15"
+                                              maxlength="11" required></label>
+                </p>
+                <div align="center">
+                    <a href="" onclick="document.form1.submit(); return false;" class="waves-effect waves-light btn light-green">
+                        注文
+                    </a>
+                    <form name="form1" method="post" action="/input_card_page">
+                        <input type="hidden" name="a" value="1"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>

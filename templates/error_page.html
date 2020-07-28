@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>error_page</title>
+
+    <!-- materialize CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize CDN -->
+    <style>
+		body {
+		 background-image: url("../static/image/aurora.jpg")
+		}
+	</style>
+</head>
+<body bgcolor=#f9f9f9>
+
+<div class="row" style="margin-top: 50px;">
+    <div class="col s12 m8 l6 offset-m2 offset-l3">
+        <div class="card">
+            <div class="card-content">
+
+                <h3 class="center">
+                    <b>エラー</b><br/>
+                </h3>
+
+                <p class="center">
+                    残念ながら、お客様の支払いにエラーがありました。<br/>
+                    お客様が入力した情報をご確認の上、再度入力するか、他のカードで試してください。
+                </p>
+
+                <p>
+                    <br/>
+                </p>
+
+                <div class="center-align">
+                    <p>
+                        <a href="" onclick="document.form1.submit(); return false;"
+                           class="waves-effect waves-light btn light-green">
+                            ここをクリックして再度試してください。
+                        </a>
+                    <form name="form1" method="post" action="/input_card_page">
+                        <input type="hidden" name="a" value="1"/>
+                    </form>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+    <div class="col s12 m8 l6 offset-m2 offset-l3">
+        <div class="card">
+            <div class="card-content">
+
+                    <p class="center">
+                    以上でフィッシング詐欺の体験は終了になります。<br>下の[解説へ]のボタンを押してください。
+                    </p>
+                     <p>
+                         <br/>
+                     </p>
+
+                <div class="center-align">
+                    <form name="form1" method="post" action="/end2">
+                        <div class="button">
+                            <p><button class="button1" type="submit">解説へ</button></p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

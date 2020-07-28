@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>advertisement</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/css/fhising.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <header style="text-align:center; line-height:1.5">
+        <h1><font color="white">調査アンケートを装ったフィッシング詐欺の体験ページです</font></h1>
+        <h2><font color="white">広告のボタンをクリックしてください</font></h2>
+    </header>
+
+    <div class="container">
+        <div class="main">
+
+            <div style="text-align:center; padding: 5px; margin-bottom: 5px; border: 1px solid gray;">
+                <h2 style="text-align:center;"><font color="#00BCD4">このページはフィッシング詐欺体験ページです</font></h2>
+                <hr width = "90%" color="black" noshade>
+                <div style="text-align:left; line-height:1; margin-left : 40px">
+                    <p><font size="+2" color="#00BCD4" >概要</font></p>
+                    <p>　サイトを閲覧している時によく広告を目にすると思います。</p>
+                    <p>今回はそんな広告を使ったフィッシング詐欺を体験してもらい、手順やおかしな点を見てもらいます。</p>
+                    <p>下記におかしな点を記載しておくので、始める前に見てもらうとより分かりやすくなるでしょう。</p>
+                    <p>　</p>
+
+                     <div class="button" style="clear:both; text-align:center;">
+                         <form method="POST" action="/questionnaire_page">
+                             <hr color="black" noshade>
+                             <h3>↓下のOKボタンを押すと<font size="+1" color="red">ポップアップ広告</font>が出現します。</h3>
+                             <button class="button" type="submit"
+                                     onclick="alert('おめでとうございます\nこのサイトをご利用のユーザの中から抽選で、iPhone Xが当たるチャンスを差し上げます。\nOKをクリックしてアンケートに答えて景品をお受け取り下さい。')">OK</button>
+                         </form>
+                     </div>
+                </div>
+            </div>
+
+            <div style="text-align:center; padding: 5px; margin-bottom: 5px; border: 1px solid gray;">
+                <h2 style="text-align:center;"><font color="#00BCD4">アンケート調査を装った詐欺のこんな点に注意</font></h2>
+                <hr width = "90%" color="black" noshade>
+                <div style="text-align:left; line-height:1; margin-left : 40px">
+                    <p><font size="+2" color="#00BCD4" >広告を利用したフィッシング詐欺の注意点！</font></p>
+                    <p style = "background-color:#FDD835; margin-right:200px; padding:5px"><font size="+1">●突然広告などで「おめでとうございます」と表示されたら…</font></p>
+                    <p>まず疑ってください。</p>
+                    <p>何もしていないのに景品が抽選で当たるようなことはないので、詐欺を疑いましょう。</p>
+                    <p>相手は勿論景品を渡すことはせずに、あなたのクレジットカード番号など個人情報を奪うことが目的です。</p>
+                    <p style = "background-color:#FDD835; margin-right:200px; padding:5px"><font size="+1">●当選詐欺は回避が難しい</font></p>
+                    <p>利用者はあやしい広告が表示されたら何もせずに閉じる(×ボタンを押す、ブラウザを閉じる)ようにしましょう。</p>
+                    <p>サイト運営側や広告代理店などが広告詐欺をチェックする仕組みを強化していく必要があるので、利用者に出来ることは少ないです。</p>
+                    <p>ですが、広告を鵜呑みにせず怪しい広告は閉じることで犯罪に巻き込まれることから回避できます。</p>
+                    <p>　</p>
+                </div>
+
+                <form method="POST" action="/start">
+                    <div class="button" style="clear:both; text-align:center;">
+                        <hr color="black" noshade>
+                        <h3>スタート画面に戻る場合は[BACK]ボタンを押してください。</h3>
+                        <button class="button1" type="submit">BACK</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="side">
+            <form method="POST" action="/questionnaire_page">
+            <div style="text-align:center; padding: 5px; margin-bottom: 5px; border: 1px solid red;">
+                <img src = "/static/image/phishingAds.jpg" alt="写真" width="350px">
+                <hr color="gray" noshade size="1">
+                <button class="button" type="submit" >OK</button>
+                </div>
+            </form>
+            <p><font size="3" color="red"><b>↑例)ディスプレイ広告(画像)</b></font></p>
+
+            <div style="text-align:left; padding: 5px; margin-bottom: 5px; border: 1px solid gray;">
+                <h3 style = "background-color:#FDD835; text-align:left;">　フィッシング詐欺例</h3>
+                <p><font color="#0000cd" >・ 偽メール</font></p>
+                <p>　→高額請求</p>
+                <p>　→無料マスク配布</p>
+                <p><font color="#0000cd" >・ 偽サイト</font></p>
+                <p>　→銀行・ショッピング</p>
+                <p>　→偽二段階認証サイト</p>
+                <p><font color="#0000cd" >・ 携帯会社の公式SMSかたる不審なSMS</font></p>
+                <p><font color="#0000cd" >・ 当選通知の広告を用いた詐欺</font></p>
+                <p><font color="#0000cd" >・ ウイルス感染を装った詐欺</font></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+<footer style="text-align:center;">
+        Tokyo Denki University @ Information Security Lab
+</footer>
+
+</html>

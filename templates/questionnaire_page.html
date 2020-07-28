@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <title>questionnaire_page</title>
+    <!-- materialize CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize CDN -->
+
+    <style>
+		body {
+		 background-image: url("../static/image/aurora.jpg")
+		}
+	</style>
+
+</head>
+<body>
+<form method="POST" ,actions="/input_page">
+
+    <nav class="indigo">
+        <div class="nav-wrapper">
+            <!--<a href="#" class="brand-logo center"></a><-->
+            <ul class="hide-on-med-and-down">
+                <li>2020 年間ビジターアンケート</li>
+                <li>ブラウザ意見アンケート</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col s12 m8 l6 offset-m2 offset-l3">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="center indigo-text">
+                        <b>おめでとうございます！</b><br/>
+                    </h3>
+
+                    <p>2019年間ビジターアンケートの参加者に選ばれました！<br/>
+                        chrome「ありがとう」を込めて<b>Banana iPhone X</b>が当たるチャンスを差し上げます！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col s12 m8 l6 offset-m2 offset-l3">
+            <div class="card">
+                <div class="card-content">
+
+                    <h5 class="center">
+                        ユーザ調査<br/>
+                    </h5>
+                    <p>
+                        <br/>
+                    </p>
+
+                    <p>問1: どのくらいの頻度でChromeを利用しますか</p>
+                    <p>
+                        <label> <input name="question1" value="" type="radio"
+                                       class="with-gap" checked/> <span>いつも</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question1" value="" type="radio" class="with-gap"/>
+                            <span>時々</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question1" value="" type="radio" class="with-gap"/>
+                            <span>全く使わない</span>
+                        </label>
+                    </p>
+
+
+                    <p>問2: 以前のバージョンのchromeにどれくらい満足していましたか?</p>
+                    <p>
+                        <label> <input name="question2" value="" type="radio"
+                                       class="with-gap" checked/> <span>とても満足</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question2" value="" type="radio" class="with-gap"/>
+                            <span>満足</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question2" value="" type="radio" class="with-gap"/>
+                            <span>まあまあ</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question2" value="" type="radio" class="with-gap"/>
+                            <span>不満</span>
+                        </label>
+                    </p>
+
+
+                    <p>問3: 他に使うブラウザは?</p>
+                    <p>
+                        <label> <input name="question3" value="" type="radio"
+                                       class="with-gap" checked/> <span>chrome</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question3" value="" type="radio" class="with-gap"/>
+                            <span>Internet Explorer</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question3" value="" type="radio" class="with-gap"/>
+                            <span>Firefox</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question3" value="" type="radio" class="with-gap"/>
+                            <span>他</span>
+                        </label>
+                    </p>
+
+
+                    <p>問4: どのくらいのインドでインタネットを利用しますか?</p>
+                    <p>
+                        <label> <input name="question4" value="" type="radio"
+                                       class="with-gap" checked/> <span>毎日</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question4" value="" type="radio" class="with-gap"/>
+                            <span>週1,2回</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question4" value="" type="radio" class="with-gap"/>
+                            <span>週1回未満</span>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label> <input name="question4" value="" type="radio" class="with-gap"/>
+                            <span>不満</span>
+                        </label>
+                    </p>
+
+
+                    <div class="center-align">
+                        <p>
+                            <a class="waves-effect waves-light btn light-green" href="http://127.0.0.1:5000/input_page">送信</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

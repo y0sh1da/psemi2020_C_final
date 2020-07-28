@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>
+        サインイン-会員情報の更新
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<form method="POST" action="/login">
+
+    <header style="text-align:left; line-height:1.5;">
+        <h1 style="padding: 10px; margin-bottom: 10px; border: 2px solid #4DD0E1;">　ひがし銀行　パスワード変更画面</h1>
+    </header>
+
+    <div class="main" style="text-align:center;">
+        <h2 style="text-align:left; padding: 10px; margin: 30px 100px; border: 2px solid #A9A9A9;"><font color="#328CC1">　会員情報の更新</font></h2>
+        <p></p>
+        ご登録のIDとパスワードをご入力の上、新しいパスワードを入力し[変更]ボタンをクリックしてください。
+
+        <p style="margin-bottom: 10px;">ユーザID　　　　　
+            <input type="text" name="id" size="15" autocomplete="off"></p>
+        <p>パスワード　　　　
+            <input type="password" name="old_password" size="15" autocomplete="off"></p>
+        <p>新しいパスワード　
+            <input type="password" name="new_password" size="15" autocomplete="off"></p>
+        <p>　</p>
+
+        <div class="button">
+            <p><button style="background-color:#328CC1;" class="button1" type="submit"><font color="white">変更</font></button></p>
+        </div>
+
+    </div>
+
+    <footer  style="text-align:center;">
+        Copyright © ひがし銀行 All rights reserved
+    </footer>
+
+</form>
+</body>
+</html>

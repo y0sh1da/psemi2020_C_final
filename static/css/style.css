@@ -1,0 +1,40 @@
+body{
+background: #EFEFEF;
+font-family: MV Boil;
+margin: 0;
+}
+
+header{
+background: #CAEBF2;
+margin: 0 30px;
+}
+
+p.box {
+font-family: "serif";
+border-bottom: 1px solid gray;
+}
+
+div.main{
+font-weight: bold;
+}
+
+div.sentence{
+}
+
+div.button{
+text-align:center;
+}
+
+button.button1{
+font-size:20px;
+font-weight: bold;
+padding: 10px 30px;
+}
+
+footer{
+width:100%;
+background: #00BCD4;
+
+position: absolute;
+bottom: 0;
+}
